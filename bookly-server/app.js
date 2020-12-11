@@ -48,16 +48,16 @@ app.use(require('node-sass-middleware')({
 }));
       
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 app.locals.title = 'Welcome to Bookly';
 
-const index = require('./routes/index');
-app.use('/', index);
+// const index = require('./routes/index');
+// app.use('/', index);
 app.use("/", require("./routes/bookclub.routes"));
 app.use("/", require("./routes/auth.routes"));
 app.use('/', require ("./routes/meeting.routes"));
@@ -69,7 +69,7 @@ if (process.env.NODE_ENV === "production") {
 
   
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/../bookly-frontend", "build", "index.html"));
+    res.sendFile(path.join(__dirname + "./../bookly-frontend", "build", "index.html"));
   });
 }
 
