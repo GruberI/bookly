@@ -75,11 +75,11 @@ app.use('/', require ("./routes/currentBook.routes"));
 if (process.env.NODE_ENV === "production") {
   // set ability to get static values from client build folder
   // static files include all javascript and css files
-  app.use(express.static("client/build"));
+  app.use(express.static("bookly-frontend/build"));
 
   // get the index.html that will be rendered on the browser
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "./../bookly-frontend", "build", "index.html"));
+    res.sendFile(path.join(__dirname + "/../bookly-frontend", "build", "index.html"));
   });
 }
 
