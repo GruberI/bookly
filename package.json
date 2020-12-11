@@ -1,0 +1,9 @@
+{
+    "name": "bookly",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "postinstall": "npm install --prefix bookly-frontend && npm install --prefix bookly-server && npm run build --prefix bookly-frontend",
+        "start": "cd bookly-server && npm start"
+    }
+}
