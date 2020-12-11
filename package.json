@@ -3,8 +3,12 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-        "postinstall": "npm install --prefix bookly-frontend && npm install --prefix bookly-server && npm run build --prefix bookly-frontend",
-        "start": "cd bookly-server && npm start"
+        "install-server": "npm install --prefix bookly-server",
+        "init-server": "node bookly-server/bin/www",
+        "start": "npm run install-server && npm run init-server",
+        "build-client": "npm run build --prefix bookly-frontend",
+        "install-client": "npm install --prefix bookly-frontend",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build-client"
     },
     "engines": {
         "node": "12.x"
