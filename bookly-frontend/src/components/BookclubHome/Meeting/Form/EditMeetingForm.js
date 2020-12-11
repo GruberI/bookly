@@ -36,6 +36,7 @@ const EditMeetingForm = (props) => {
         })
         .then(() => {
             props.getBookClub()
+            editFormState(initialState);
         })
         .catch((error) => console.error(error));
   }
