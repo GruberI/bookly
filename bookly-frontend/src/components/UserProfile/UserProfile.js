@@ -20,7 +20,7 @@ const UserProfile = (props) => {
             </Link>
 
             <hr/>
-            <h1 className="userH1 listH1">My Book Clubs</h1>
+            <h1 className="userH1 listH1">Your Book Clubs</h1>
             <BookClubList user={loggedInUser}/>
         </div>
     );
