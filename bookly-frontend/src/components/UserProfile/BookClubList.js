@@ -13,7 +13,7 @@ const BookClubList = (props) => {
     const getAllBookClubs = () => {
        
         axios
-        .get(`http://localhost:5000/userprofile/${user._id}`, { withCredentials: true })
+        .get(`${process.env.REACT_APP_BASE_URL}/userprofile/${user._id}`, { withCredentials: true })
         .then((responseFromApi) => {
             setListOfBookClubs(responseFromApi.data.bookclubs);
         })

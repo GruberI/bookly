@@ -27,7 +27,7 @@ const CreateClub = (props) => {
         
         axios
         .post(
-            "http://localhost:5000/create",
+            `${process.env.REACT_APP_BASE_URL}/create`,
             { name, password, userId },
             { withCredentials: true }
         )

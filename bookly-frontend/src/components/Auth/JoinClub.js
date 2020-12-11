@@ -24,7 +24,7 @@ const JoinClub = (props) => {
 
         axios
         .post(
-            "http://localhost:5000/join",
+            `${process.env.REACT_APP_BASE_URL}/join`,
             { _id, userId },
             { withCredentials: true }
         )
@@ -40,7 +40,7 @@ const JoinClub = (props) => {
         <h1>Join A Club!</h1>
         <hr/>
         <form onSubmit={handleFormSubmit} className="loginDiv">
-        
+
             <div className="item-edit-div">
                 <label htmlFor="id" className="label1">Book Club ID:</label>
                 <br/>

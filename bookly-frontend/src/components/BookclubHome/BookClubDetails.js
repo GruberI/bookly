@@ -16,7 +16,7 @@ const BookclubDetails = (props) => {
     const getSingleClub = () => {
         const { id } = props.match.params;
         axios
-          .get(`http://localhost:5000/bookclub/${id}`, {
+          .get(`${process.env.REACT_APP_BASE_URL}/bookclub/${id}`, {
             withCredentials: true,
           })
           .then((responseFromApi) => {
@@ -32,7 +32,7 @@ const BookclubDetails = (props) => {
     const removeMember = (member) => {
       const editBookClub = {bookclubId: details._id, memberId: member._id}
       axios
-      .post(`http://localhost:5000/removeMember`, editBookClub)
+      .post(`${process.env.REACT_APP_BASE_URL}/removeMember`, editBookClub)
       .then((response) => {
         console.log(response)
         setDetails(response.data)
