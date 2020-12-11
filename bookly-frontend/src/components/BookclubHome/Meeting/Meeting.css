@@ -1,0 +1,66 @@
+.meeting-details-div {
+    display: flex;
+    margin-left: 35px;
+}
+
+.meeting-ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 17px;
+}
+
+.meeting-ul li {
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.meeting-details-text {
+    padding-left: 25px;
+}
+
+/* .meeting-details-text p {
+    font-family: 'Noto Sans TC', sans-serif;
+} */
+
+.add-meeting-btn {
+    background-color: #d53d32;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: .5em 1.7em;
+    color: #fefbf4;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.update-btn{
+    padding: .5em 1em;
+    margin-left: 10px;
+}
+
+.add-meeting-btn:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 12px rgba(33,33,33,.2); 
+}
+
+.onclickDiv {
+    width: 50%;
+}
+
+form {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

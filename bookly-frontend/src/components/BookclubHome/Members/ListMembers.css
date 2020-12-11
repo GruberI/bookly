@@ -1,0 +1,24 @@
+.members-ul  {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    font-size: 22px;
+    padding-left: 0;
+}
+
+.members-em {
+    font-family: 'Pacifico', cursive;
+}
+
+.members-p {
+    font-size: 10px;
+    text-align: center;
+    color: #d53d32;
+}
+
+.member-ul-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

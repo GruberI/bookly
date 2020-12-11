@@ -1,0 +1,82 @@
+nav {
+    /* background-color: rgba(12, 23, 42, 0.9); */
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .loggedInNav {
+    background-color: #151f22;
+  }
+
+  nav p {
+    float: right;
+    font-size: 1em;
+    font-weight: 400;
+    margin-right: 2.5em;
+    color: #d53d32;
+    /* font-family: 'Noto Sans TC', sans-serif; */
+  }
+
+  nav button {
+    float: right;
+    border: none;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 8px 25px;
+    font-weight: 500;
+    background-color: #1b282c;
+    color: #e0d9ce;
+    font-size: 15px;
+  }
+
+  .button-div {
+    margin-right: 50px;
+  }
+
+  .loggedInNavP {
+    float: right;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 2.5em;
+    color: #e0d9ce;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+  }
+
+  .loggedInNavP:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+
+  button:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+  }
+
+  /* .pTwo {
+    margin-right: 2.6em;
+  } */
+
+  .icon {
+    float: left;
+    margin-top: .9em;
+    margin-left: 1.5em;
+    font-size: 2.5em;
+    color:#e0d9ce;
+  }
+
+  .icon:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+
+  .iconLoggedIn {
+    float: left;
+    margin-top: .5em;
+    margin-left: 1.9em;
+    font-size: 2.1em;
+    color:#fcf7f3;
+  }

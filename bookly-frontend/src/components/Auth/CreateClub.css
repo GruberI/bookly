@@ -1,0 +1,108 @@
+.authFormDiv {
+    background-color: rgba(224, 217, 206, 0.8);
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.authFormDivLoggedIn {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.createDiv{
+    margin-top: 60px;
+    padding-bottom: 150px;
+}
+
+h1 {
+    color:black;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 1.2em;
+    font-weight: 600;
+}
+
+hr {
+    width: 50%;
+}
+
+form {
+    margin: auto;
+    width: 35%;
+    height: 60%;
+    padding: 10px;
+}
+
+.item-edit-div label {
+    float:left;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: .6em;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.label1 {
+    color: black;
+}
+
+.item-edit-div input {
+    width: 100%;
+    margin-top: 5px;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.createBtn {
+    background-color: #d53d32;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1.5em;
+    padding: 10px 40px;
+    color: #fefbf4;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .userBtn {
+    background-color: #d53d32;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1em;
+    margin-bottom: 30px;
+    padding: 15px 45px;
+    color: #fefbf4;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .Btn1 {
+    margin-right: 40px;
+  }
+
+  .createBtn:hover {
+      text-decoration: underline;
+  }
+
+  .userBtn:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 12px rgba(33,33,33,.2); 
+}
+
+  .listH1{
+      margin-top: 40px;
+  }
+
+  .loginDiv {
+      width: 35%;
+  }

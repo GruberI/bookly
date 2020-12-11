@@ -1,0 +1,60 @@
+
+.App-logo {
+  width: 65%;
+  }
+  
+  .homeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    width: 800px;
+  }
+
+  /* a {
+    color: #d53d32;
+
+  } */
+
+  .homePDiv{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    height: 350px;
+  }
+  
+  .homeIcon {
+    font-size: 4.5rem;
+    padding-bottom: 20px;
+    color: #b9b4ac;
+  }
+  
+  .contentDiv button {
+    background-color: #d53d32;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: none;
+    border-radius: 3px;
+    margin-top: .6em;
+    padding: 10px 40px;
+    color: #fefbf4;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .contentDiv button:hover {
+      text-decoration: underline;
+      box-shadow: 0 0 11px rgba(33,33,33,.3);
+  }
+
+  
+  .pTitle{
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Calistoga', cursive;
+  }
+  

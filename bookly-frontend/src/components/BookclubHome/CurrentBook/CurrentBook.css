@@ -1,0 +1,28 @@
+.current-book-details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.book-details img {
+    object-fit: cover;
+    width: 330px;
+    height: 500px;
+}
+
+.current-book-text-div {
+    text-align: start;
+    width: 75%;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.title-h4 {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.update-book {
+    margin-left: 10px;
+}

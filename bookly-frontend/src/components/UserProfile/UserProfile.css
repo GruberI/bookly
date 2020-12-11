@@ -1,0 +1,43 @@
+.user-profile-container {
+    width: 93%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.userH1 {
+    color: black;
+    
+}
+
+.list-first-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.list-second-div{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.list-second-div:hover{
+    box-shadow: 0 0 12px rgba(33,33,33,.2); 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}

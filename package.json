@@ -5,5 +5,8 @@
     "scripts": {
         "postinstall": "npm install --prefix bookly-frontend && npm install --prefix bookly-server && npm run build --prefix bookly-frontend",
         "start": "cd bookly-server && npm start"
-    }
+    },
+    "engines": {
+        "node": "12.x"
+      }
 }
