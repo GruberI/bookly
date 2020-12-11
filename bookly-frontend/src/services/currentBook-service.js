@@ -8,12 +8,10 @@ class CurrentBookService {
     });
   }
 
-  // Create new meeting
   createCurrentBook = (data) => {
     return this.service.post("/currentBook", data).then((response) => response);
   };
 
-  //Method to update meeting
   updateCurrentBook = (data) => {
     return this.service
     .post("/updateCurrentBook", data)

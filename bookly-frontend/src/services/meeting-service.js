@@ -8,12 +8,10 @@ class MeetingService {
     });
   }
 
-  // Create new meeting
   createMeeting = (data) => {
     return this.service.post("/meeting", data).then((response) => response);
   };
 
-  //Method to update meeting
   updateMeeting = (data) => {
     return this.service.post("/updateMeeting", data).then((response) => response);
   };

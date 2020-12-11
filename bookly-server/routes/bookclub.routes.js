@@ -5,7 +5,6 @@ const router = Router();
 const BookClub = require("../models/bookclub.model");
 const User = require('../models/user.model')
 
-/* POST - creates a new bookclub */
 router.post("/create", (req, res) => {
     const { name, password, userId } = req.body;
   
@@ -39,12 +38,9 @@ router.post("/create", (req, res) => {
       });
   });
 
-  //get route for specifc bookclub details 12/5
-
   router.get("/bookclub/:id", (req, res) => {
-    const { id } = req.params; //do I use req.params.id??
+    const { id } = req.params;
   
-    // Check if the incoming id is a valid ObjectId type
     if (!mongoose.Types.ObjectId.isValid(id)) {
       res.status(400).json({ message: "Specified id is not valid" });
       return;
@@ -62,7 +58,6 @@ router.post("/create", (req, res) => {
       });
   });
 
-//join a bookclub
 router.post('/join', async (req, res) => {
   const { _id, userId } = req.body;
   try {
@@ -72,21 +67,19 @@ router.post('/join', async (req, res) => {
         }
       }
     );
-    //userID = tester 2
-    //_id = current bookclub
+    
     const response = await User.findByIdAndUpdate(userId, {
       $push: {
         bookclubs: _id
       }}
     );
-       //response is not coming back with what we need. Coming back with Tester1 Id
+      
     res.status(200).send(response);
   } catch (err) {
       res.status(500).json(err);
   }
 });
 
-//Delete with async await updating User profile again.
 router.post('/removeMember', async (req, res) => {
   const { bookclubId, memberId } = req.body;
   try {

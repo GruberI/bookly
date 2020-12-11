@@ -1,5 +1,4 @@
 nav {
-    /* background-color: rgba(12, 23, 42, 0.9); */
     overflow: hidden;
     width: 100%;
     margin: 0;
@@ -16,7 +15,6 @@ nav {
     font-weight: 400;
     margin-right: 2.5em;
     color: #d53d32;
-    /* font-family: 'Noto Sans TC', sans-serif; */
   }
 
   nav button {
@@ -43,7 +41,6 @@ nav {
     margin-right: 2.5em;
     color: #e0d9ce;
     font-family: 'Noto Sans TC', sans-serif;
-    /* font-family: 'Pacifico', cursive; */
   }
 
   .loggedInNavP:hover {
@@ -55,10 +52,6 @@ nav {
     text-decoration: underline;
     box-shadow: 0 0 15px rgba(33,33,33,.2);
   }
-
-  /* .pTwo {
-    margin-right: 2.6em;
-  } */
 
   .icon {
     float: left;

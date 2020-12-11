@@ -22,18 +22,6 @@ const BookClubList = (props) => {
 
     useEffect(getAllBookClubs, []);
 
-    // function to "delete"/but really update a bookclub
-//   const deleteMemberFromClub = () => {
-//     axios
-//       .get(`http://localhost:5000/bookclub/${user._id}`, {
-//         withCredentials: true,
-//       })
-//       .then((results) => {
-//         props.history.push("/userprofile");
-//       })
-//       .catch((error) => console.error(error));
-//   };
-
     return user.bookclubs.length === 0 ? (
         <p>You are not part of a club</p>
     ) : (
@@ -47,7 +35,6 @@ const BookClubList = (props) => {
                     <h3>{bookclub.name}</h3>    
                 </Link>
                 <p>Send this code so other members can join: <strong>{bookclub._id}</strong></p>
-                {/* <button onClick={() => deleteBookClub(bookclub._id)}>Delete</button> */}
             </div>
         </div>
         )

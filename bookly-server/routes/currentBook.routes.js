@@ -1,27 +1,10 @@
 const { Router } = require("express");
 const mongoose = require("mongoose");
-// const { BookclubDetails } = require("../../bookly-frontend/src/components/BookclubHome/BookClubDetails");
 const CurrentBook = require("../models/currentBook.model");
 const BookClub = require("../models/bookclub.model");
 
 const router = Router()
 
-//get route for a specifc book
-//dont know which route to use
-// router.get("/bookclub/:id", (req, res) => {
-//     const { currentBookId } = req.params;
-  
-    
-//     CurrentBook.findById(currentBookId)
-//       .then((currentBook) => {
-//         res.status(200).json(currentBook);
-//       })
-//       .catch((error) => {
-//         res.status(500).json(error);
-//       });
-//   });
-
-//create new currentBoook
 router.post("/currentBook", (req, res) => {
     const { title, author, image, description, bookClubId} = req.body;
 

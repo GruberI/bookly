@@ -4,7 +4,7 @@ const {
 } = require("mongoose");
 
 const bookClubSchema = new Schema({
-    name: String, //book club name
+    name: String, 
     members: [{
         type: Schema.Types.ObjectId,
         password: String,

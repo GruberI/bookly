@@ -48,12 +48,7 @@ const CreateClub = (props) => {
                     <br/>
                     <input type="text" name="name" value={clubState.name} onChange={handleInputChange} placeholder="ex. My Wine Club Has a Book Problem..."/>
                 </div>
-                {/* <div className="item-edit-div">
-                    <label htmlFor="password" className="label3">Password:</label>
-                    <br/>
-                    <input type="text" name="password" value={clubState.password} onChange={handleInputChange}/>
-                </div> */}
-                       
+              
                 <button type="submit" className="createBtn">Create</button>
             </form>
         </div>

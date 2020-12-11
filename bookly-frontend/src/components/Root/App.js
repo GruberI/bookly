@@ -7,7 +7,6 @@ import Home from '../Home/Home'
 import CreateClub from '../Auth/CreateClub'
 import Login from '../Auth/Login'
 import Signup from '../Auth/Signup'
-// import ClubHome from '../Club/ClubHome/ClubHome'
 import UserProfile from '../UserProfile/UserProfile'
 import AuthService from "../../services/auth-service";
 import ProtectedRoute from "../Auth/ProtectedRoute";
@@ -19,7 +18,6 @@ function App() {
 
   const service = new AuthService();
 
-  // Function to help fetch a logged in user
   const fetchUser = () => {
     if (loggedInUser === null) {
       service
@@ -33,10 +31,8 @@ function App() {
     }
   };
 
-  // Function to help get the loggedIn user
   const getLoggedInUser = (userObject) => setLoggedInUser(userObject);
 
-  // Run to check if user is authenticated
   fetchUser();
 
   return loggedInUser ? (

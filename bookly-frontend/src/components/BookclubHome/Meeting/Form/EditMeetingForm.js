@@ -10,7 +10,6 @@ const EditMeetingForm = (props) => {
     console.log("props theMeeting is:")
     console.log(props.theMeeting)
 
-      // Function handler for input changes in the form
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setEditFormState({ ...editFormState, [name]: value });
@@ -45,12 +44,6 @@ const EditMeetingForm = (props) => {
     !editFormState.isShowing
       ? setEditFormState({ ...editFormState, isShowing: true })
       : setEditFormState({ ...editFormState, isShowing: false });
-
-// const toggleButton = () => {
-//     editFormState.editButtonShowing
-//     ? setEditFormState({...editFormState, editButtonShowing: false})
-//     : setEditFormState({...details, editButtonShowing: true})
-// }
 
     return (
         <div className="edit-form-div">

@@ -8,14 +8,12 @@ class AuthService {
         });
     };
 
-    //method for signup component
     signup = (username, password) => {
         return this.service
         .post('/signup', {username, password})
         .then((response) => response.data);
     };
 
-    //method for login component
     login = (username, password) => {
         return this.service
         .post('/login', {username, password})

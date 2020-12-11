@@ -8,8 +8,7 @@ const initialState = { date: "", time: "", link: "", isShowing: false, };
 const AddMeetingForm = (props) => {
     const [addFormState, setAddFormState] = useState(initialState);
 
-    // Function handler for input changes in the form
-  const handleInputChange = (event) => {
+    const handleInputChange = (event) => {
     const { name, value } = event.target;
     setAddFormState({ ...addFormState, [name]: value });
   };
@@ -36,7 +35,6 @@ const AddMeetingForm = (props) => {
         .catch((error) => console.error(error));
   }
 
-  // function handler to toggle the form
   const toggleForm = () =>
     !addFormState.isShowing
       ? setAddFormState({ ...addFormState, isShowing: true })

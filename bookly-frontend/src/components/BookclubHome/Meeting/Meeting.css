@@ -21,10 +21,6 @@
     padding-left: 25px;
 }
 
-/* .meeting-details-text p {
-    font-family: 'Noto Sans TC', sans-serif;
-} */
-
 .add-meeting-btn {
     background-color: #d53d32;
     font-family: 'Noto Sans TC', sans-serif;
@@ -53,9 +49,6 @@
 
 form {
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
 }
 
 .form-inputs {

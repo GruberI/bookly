@@ -9,24 +9,19 @@ const initialState = { username: "", password: "" };
 
 const Signup = (props) => {
     const [signupForm, setSignupForm] = useState(initialState);
-    const [signupErrorMsg, setSignupErrorMsg] = useState(""); // const [signupErrorMsg, setSignupErrorMsg] = useState("");
+    const [signupErrorMsg, setSignupErrorMsg] = useState(""); 
 
     const service = new AuthService();
-
-    // Form submission handler
     const handleFormSubmit = (event) => {
     event.preventDefault();
 
     const { username, password } = signupForm;
     console.log("FROM REACT", username, password)
 
-    // Use the service.signup method to make a call to the back end and sign the user up
     service
       .signup(username, password)
       .then((response) => {
         props.getUser(response);
-
-        //redirect to userprofile
         props.history.push('/userprofile')
       })
       .catch((error) => {
@@ -36,9 +31,6 @@ const Signup = (props) => {
       });
   };
 
-
-
-  // Change handler
   const handleChange = (event) => {
     const { name, value } = event.target;
     setSignupForm({ ...signupForm, [name]: value });
@@ -54,11 +46,7 @@ const Signup = (props) => {
                     <br/>
                     <input type="text" name="username" value={signupForm.username} onChange={handleChange}/>
                 </div>
-                {/* <div className="item-edit-div">
-                    <label htmlFor="email" className="label2">Email:</label>
-                    <br/>
-                    <input type="text" name="email"/>
-                </div> */}
+                
                 <div className="item-edit-div">
                     <label htmlFor="password" className="label1">Password:</label>
                     <br/>

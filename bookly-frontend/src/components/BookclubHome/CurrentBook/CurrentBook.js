@@ -6,8 +6,7 @@ const CurrentBook = (props) => {
 
     return (
       <div>
-      
-     { props && props.currentBook ? 
+        { props && props.currentBook ? 
             <div className="current-book-details">
               <div className="book-details">
                   <img src={props.currentBook.image} alt="bookcover"/>
@@ -20,20 +19,7 @@ const CurrentBook = (props) => {
               </div>
               </div>
               : ""} 
-      
-    </div>
-        // <div className="current-book-div">
-        // {props && props.currentBook ? props.currentBook.map((currentBookDetail) =>{
-        //   return (
-        //     <ul key={currentBookDetail._id} className="meeting-ul">
-        //                 <li>Here: {currentBookDetail.image}</li>
-        //                 <li>I: {currentBookDetail.title}</li>
-        //                 <li>Am: {currentBookDetail.author}</li>
-        //             </ul>
-        //   )
-        // }): ""}
-  
-        // </div>
+      </div>
     );
 }
 

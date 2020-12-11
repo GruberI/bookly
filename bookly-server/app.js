@@ -10,11 +10,8 @@ const cors = require("cors");
 const passport = require("passport");
 const session = require("express-session");
 
-
-// Database connection
 require("./configs/db.configs");
 
-// Passport configuration
 require("./configs/passport.configs");
 
 const app_name = require('./package.json').name;
@@ -22,7 +19,6 @@ const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.
 
 const app = express();
 
-// Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,7 +30,6 @@ app.use(
   })
 );
 
-// Session middleware
 app.use(
   session({
     secret: process.env.SESS_SECRET,
@@ -43,11 +38,8 @@ app.use(
   })
 );
 
-// Passport Middleware
 app.use(passport.initialize());
 app.use(passport.session());
-
-// Express View engine setup
 
 app.use(require('node-sass-middleware')({
   src:  path.join(__dirname, 'public'),
@@ -61,7 +53,7 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
-// default value for title local
+
 app.locals.title = 'Welcome to Bookly';
 
 const index = require('./routes/index');
@@ -71,13 +63,11 @@ app.use("/", require("./routes/auth.routes"));
 app.use('/', require ("./routes/meeting.routes"));
 app.use('/', require ("./routes/currentBook.routes"));
 
-// Setting up environments
+
 if (process.env.NODE_ENV === "production") {
-  // set ability to get static values from client build folder
-  // static files include all javascript and css files
   app.use(express.static("bookly-frontend/build"));
 
-  // get the index.html that will be rendered on the browser
+  
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/../bookly-frontend", "build", "index.html"));
   });

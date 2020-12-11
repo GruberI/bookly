@@ -7,16 +7,10 @@ const initialState = {_id: "", userId: ""};
 
 const JoinClub = (props) => {
     const [clubState, setClubState] = useState(initialState);
-    // const [loggedInUser, setLoggedInUser] = useState(null)
     const userId = props.loggedInUser._id
     const { getUser } = props
 
-    // useEffect(() => {
-    //     setLoggedInUser(props.loggedInUser)
-    //     }, [props.loggedInUser]);
-
     const handleInputChange = (event) => {
-        // const { name, value } = event.target.value;
         setClubState({
             _id : event.target.value, 
             userId 
@@ -46,12 +40,7 @@ const JoinClub = (props) => {
         <h1>Join A Club!</h1>
         <hr/>
         <form onSubmit={handleFormSubmit} className="loginDiv">
-            {/* <div className="item-edit-div">
-                <label htmlFor="userId" className="label1">Your ID:</label>
-                <input type="prefilled" name="userId" value={userId} readOnly/>
-                <br/>
-            </div> */}
-
+        
             <div className="item-edit-div">
                 <label htmlFor="id" className="label1">Book Club ID:</label>
                 <br/>

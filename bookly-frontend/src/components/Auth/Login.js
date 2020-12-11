@@ -9,11 +9,10 @@ const initialState = { username: "", password: "" };
 
 const Login = (props) => {
     const [loginState, setLoginState] = useState(initialState);
-    const [loginErrorMsg, setLoginErrorMsg] = useState("");   //const [loginErrorMsg, setLoginErrorMsg] = useState(""); 
+    const [loginErrorMsg, setLoginErrorMsg] = useState("");   
 
     const service = new AuthService();
 
-    // Function to handle form submit in the input fields
     const handleFormSubmit = (event) => {
         event.preventDefault();
     
@@ -33,7 +32,6 @@ const Login = (props) => {
           });
       };
 
-    // Function to handle changes in the input fields
     const handleChange = (event) => {
         const { name, value } = event.target;
         setLoginState({ ...loginState, [name]: value });
@@ -49,11 +47,7 @@ const Login = (props) => {
                     <br/>
                     <input type="text" name="username" value={loginState.username} onChange={handleChange}/>
                 </div>
-                {/* <div className="item-edit-div">
-                    <label htmlFor="email" className="label2">Your Email:</label>
-                    <br/>
-                    <input type="text" name="email"/>
-                </div> */}
+                
                 <div className="item-edit-div">
                     <label htmlFor="password" className="label1">Password:</label>
                     <br/>
@@ -73,5 +67,4 @@ const Login = (props) => {
     );
 }
 
-// export default Login;
 export default withRouter(Login);
