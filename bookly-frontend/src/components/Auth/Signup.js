@@ -3,7 +3,7 @@ import './CreateClub.css';
 
 import { Link } from "react-router-dom";
 import AuthService from "../../services/auth-service";
-import { withRouter } from "react-router-dom";
+import { withRouter, useHistory } from "react-router-dom";
 
 const initialState = { username: "", password: "" };
 
@@ -12,6 +12,8 @@ const Signup = (props) => {
     const [signupErrorMsg, setSignupErrorMsg] = useState(""); 
 
     const service = new AuthService();
+    const history = useHistory()
+
     const handleFormSubmit = (event) => {
     event.preventDefault();
 
@@ -22,7 +24,7 @@ const Signup = (props) => {
       .signup(username, password)
       .then((response) => {
         props.getUser(response);
-        props.history.push('/userprofile')
+        history.push('/userprofile')
       })
       .catch((error) => {
         const message = "error upon signup";
