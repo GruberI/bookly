@@ -3,11 +3,13 @@
 }
 
 body {
-  background: url('https://preview.redd.it/l7h0vqwmdvd11.jpg?width=960&crop=smart&auto=webp&s=d82cf98a568cbbc8f4b0b493f0de84fa01994ef5') no-repeat center center fixed; 
+  background: url("../images/cozybookstore.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* https://preview.redd.it/l7h0vqwmdvd11.jpg?width=960&crop=smart&auto=webp&s=d82cf98a568cbbc8f4b0b493f0de84fa01994ef5 */
 
 
