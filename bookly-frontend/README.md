@@ -1,10 +1,29 @@
+# Bookly
+
 Welcome to Bookly! Our mission is to bring together the stories & the people you love. Bookly is a virtual bookclub space where you and your friends can create/join a bookclub and have a space to organize the details. Enjoy!
 
-# Getting Started with Create React App
+Bookly was the final MERN web application project for the Ironhack bootcamp. This app uses ReactJS, Javascript, MongoDB, ExpressJS, NodeJS, SCSS, Client side rendering. 
+
+![Bookly Home](./public/bookly-home.png)
+
+## Demo
+
+View the demo here: https://book-ly.herokuapp.com/
+
+### Features
+
+* User Email and Password Authentication
+* Create and/or join individual bookclubs
+* User profile page shows all bookclub memberships
+* Bookclub features:
+    * View other members
+    * View or Update meeting date, time and zoom link
+    * View or Update current book
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
